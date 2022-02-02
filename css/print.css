@@ -1,0 +1,23 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+}
+
+h2 {
+    font-family: "Lucida Handwriting", serif;
+    font-size: 16pt;
+}
+
+h3 {
+    font-family: "Comic Sans MS", serif;
+    font-size: 14pt;
+}
+
+#header, #nav, #news, #footer {
+    display: none;
+}
+

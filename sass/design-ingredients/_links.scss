@@ -1,0 +1,66 @@
+/*Page Links*/
+
+.page-link {
+
+}
+
+.page-link:link,
+.page-link:visited {
+  text-decoration: none;
+  color: #1c7ed6;
+
+  transition: all .2s;
+}
+
+.page-link:hover,
+.page-link:active {
+  color: #1864ab;
+
+}
+
+.page-link-1:link,
+.page-link-1:visited {
+  text-decoration: none;
+  color: #495057;
+  color: #f783ac;
+  //color: #fff0f6;
+  color: #ffd43b;
+
+  transition: all .2s;
+}
+
+
+.page-link-1:hover,
+.page-link-1:active {
+  color: #adb5bd;
+}
+/*
+.special-link:link,
+.special-link:visited {
+  text-decoration: none;
+  color: #f76707;
+  transition: all .2s;
+}*/
+
+.special {
+  color: #f76707;
+
+  transition: all .3s;
+}
+
+.special:hover,
+.special:active {
+  color: #d9480f;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active {
+
+}
+
+

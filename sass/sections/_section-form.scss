@@ -1,0 +1,44 @@
+input[type="submit"] {
+  //transition: all .3s;
+ /* color: white;
+  background-color: #0b7285 ;
+  border: 0;
+  border-radius: 5px;
+
+  transition: all .3s;*/
+}
+
+input[type="submit"]:hover {
+/*  background-color: #e3fafc;
+  color: #0b7285 ;*/
+}
+
+.form-messages {
+  color: white;
+  font-size: 2rem;
+  //width: 70%;
+  font-weight: bold;
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  padding: 1.6rem 3.2rem;
+  border-radius: 3px;
+  //margin-bottom: 3rem;
+}
+
+.success {
+  background-color: #2b8a3e;
+}
+
+.green-success {
+  background-color: white;
+  color: #2b8a3e;
+}
+
+.red-error {
+  background-color: white;
+  color: #c92a2a;
+}
+
+.error {
+  background-color: #c92a2a;
+}

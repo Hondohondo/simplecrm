@@ -1,0 +1,124 @@
+//Carousel Component
+.carousel {
+  //all used so far were inline styles from the amigo css
+}
+
+//Accordion Component
+.accordion {
+
+  display: flex;
+  flex-direction: column;
+  //gap: 2.4rem;
+  gap: 4.8rem;
+
+}
+
+.item {
+  border-top: 4px solid #087f5b;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2.4rem;
+  //row-gap: 3.2rem;
+  //align-items: center;
+  align-items: baseline;
+
+  background-color: white;
+}
+
+.item-2 {
+  border-top: 6px solid #0B7285;
+  background-color: white;
+
+  position: relative;
+  //z-index: 3;
+}
+
+.item-3 {
+  border-left: 6px solid #0B7285;
+  background-color: white;
+}
+
+.text {
+  line-height: 1.2;
+}
+
+.number {
+  //color: #ced4da;
+}
+.number-2 {
+/*  vertical-align: baseline;
+  color: #0B7285;
+  background-color: white;
+  background-color: red;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;*/
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+  color: #0B7285;
+  border-radius: 50%;
+  //padding: 2.5rem;
+}
+
+p.icon {
+  display: none;
+}
+
+.hidden-box {
+  grid-column: 2;
+  //display: none;
+}
+
+.hidden-box p {
+  font-size: 1.6rem;
+}
+
+.hidden-box ul {
+  display: none;
+}
+
+//OPEN STATE
+//the element we want to be open - to be used in JavaScript too.
+.open {
+  //border-top: 4px solid #087f5b;
+}
+
+.open .hidden-box {
+  //display: block;
+}
+
+.open .number,
+.open .text
+{
+  //color: #087f5b;
+}
+
+.quot {
+  color: #0B7285;
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  font-size: 9.6rem;
+  font-family: "Lora", serif !important;
+}
+
+.jung-img {
+  //width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 95%;
+  //z-index: 2;
+  //transform: translate(-50%, -50%);
+}
+
+.book-img {
+  position: absolute;
+  top: 25%;
+  left: 95%;
+}

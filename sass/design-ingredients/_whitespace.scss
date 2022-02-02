@@ -1,0 +1,244 @@
+/*SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+12 values
+Using this system you can be creative by coming up with new values - let's say you want a div with width of 720px, Well We don't have 72rem, but we have 80rem. So you can have a container with 80rem and make it have padding left and right of 4rem ...and there you have it. 72rem.
+Also as a trick when using your own custom classes but don't want to come up with new values...You can try to see what are the center values. E.g we have 48 and 64 now what if 48 is too small and 64 is too large...instead of just guessing you can find a middle point between 48 and 64 and that is 56.
+These same tricks can be used when working with the font system too. But in fonts...Avoiding values that have odd numbers in them. Let's say you think font size of 30 is a bit too small, and the next one of 36 is a bit too big...Instead of picking the mid point of 3, you can just add 2 from 30 and get 32 or omit 2 from 36 and get 34, Odd numbers as font sizes looks a bif odd (pun intended) in my opinion
+*/
+
+/*FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+15 values
+*/
+
+/*If I combine the two systems here is what I get (I highly doubt if I will use this...It's too much -- so many values to pick from)
+
+2 / 4 / 8 / 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 32 / 36 / 44 / 48 / 52 / 62 / 64 / 74 / 80 / 86 / 96 / 98 / 128
+
+24 values
+*/
+
+
+//GAP - As used in Flexbox and Grid Layout (Shortcut for rowgap and column gap)
+
+.gap-0 { gap: 0; }
+.gap-2 { gap: .2rem; }
+.gap-4 { gap: .4rem;}
+.gap-8 { gap: .8rem; }
+.gap-12 { gap: 1.2rem; }
+.gap-16 { gap: 1.6rem; }
+.gap-24 { gap: 2.4rem; }
+.gap-32 { gap: 3.2rem; }
+.gap-48 { gap: 4.8rem; }
+.gap-64 { gap: 6.4rem; }
+.gap-80 { gap: 8.0rem; }
+.gap-96 { gap: 9.6rem; }
+
+//ROW GAPS (Better support on grid layout, , for flexbox just use gap)
+.row-gap-0 { row-gap: 0; }
+.row-gap-2 { row-gap: .2rem; }
+.row-gap-4 { row-gap: .4rem;}
+.row-gap-8 { row-gap: .8rem; }
+.row-gap-12 { row-gap: 1.2rem; }
+.row-gap-16 { row-gap: 1.6rem; }
+.row-gap-24 { row-gap: 2.4rem; }
+.row-gap-32 { row-gap: 3.2rem; }
+.row-gap-48 { row-gap: 4.8rem; }
+.row-gap-64 { row-gap: 6.4rem; }
+.row-gap-80 { row-gap: 8.0rem; }
+.row-gap-96 { row-gap: 9.6rem; }
+
+//COL GAPS (Better support on grid layout, for flexbox just use gap)
+.column-gap-0 { column-gap: 0; }
+.column-gap-2 { column-gap: .2rem; }
+.column-gap-4 { column-gap: .4rem;}
+.column-gap-8 { column-gap: .8rem; }
+.column-gap-12 { column-gap: 1.2rem; }
+.column-gap-16 { column-gap: 1.6rem; }
+.column-gap-24 { column-gap: 2.4rem; }
+.column-gap-32 { column-gap: 3.2rem; }
+.column-gap-48 { column-gap: 4.8rem; }
+.column-gap-64 { column-gap: 6.4rem; }
+.column-gap-80 { column-gap: 8.0rem; }
+.column-gap-96 { column-gap: 9.6rem; }
+
+
+//Alignment
+.margin-center { margin: 0 auto;}
+//.mg-auto { margin: auto auto;}
+
+/*
+\\mg margin This apply to all sides top, bottom, right and left
+*/
+
+.margin-auto { margin: auto; }
+.margin-0 { margin: 0; }
+.margin-2 { margin: .2rem; }
+.margin-4 { margin: .4rem;}
+.margin-8 { margin: .8rem; }
+.margin-12 { margin: 1.2rem; }
+.margin-16 { margin: 1.6rem; }
+.margin-24 { margin: 2.4rem; }
+.margin-32 { margin: 3.2rem; }
+.margin-48 { margin: 4.8rem; }
+.margin-64 { margin: 6.4rem; }
+.margin-80 { margin: 8.0rem; }
+.margin-96 { margin: 9.6rem; }
+
+
+\\mg-rt margin-right
+
+.margin-right-auto { margin-right: auto; }
+.margin-right-0 { margin-right: 0; }
+.margin-right-2 { margin-right: .2rem; }
+.margin-right-4 { margin-right: .4rem; }
+.margin-right-8 { margin-right: .8rem; }
+.margin-right-12 { margin-right: 1.2rem; }
+.margin-right-16 { margin-right: 1.6rem; }
+.margin-right-24 { margin-right: 2.4rem; }
+.margin-right-32 { margin-right: 3.2rem; }
+.margin-right-48 { margin-right: 4.8rem; }
+.margin-right-64 { margin-right: 6.4rem; }
+.margin-right-80 { margin-right: 8.0rem; }
+.margin-right-96 { margin-right: 9.6rem; }
+
+
+\\mg-lt margin-left
+
+.margin-left-auto { margin-left: auto; }
+.margin-left-0 { margin-left: 0; }
+.margin-left-2 { margin-left: .2rem; }
+.margin-left-4 { margin-left: .4rem; }
+.margin-left-8 { margin-left: .8rem; }
+.margin-left-12 { margin-left: 1.2rem; }
+.margin-left-16 { margin-left: 1.6rem; }
+.margin-left-24 { margin-left: 2.4rem; }
+.margin-left-32 { margin-left: 3.2rem; }
+.margin-left-48 { margin-left: 4.8rem; }
+.margin-left-64 { margin-left: 6.4rem; }
+.margin-left-80 { margin-left: 8.0rem; }
+.margin-left-96 { margin-left: 9.6rem; }
+
+
+\\mg-tp margin-top
+
+.margin-top-auto { margin-top: auto; }
+.margin-top-0 { margin-top: 0; }
+.margin-top-2 { margin-top: .2rem; }
+.margin-top-4 { margin-top: .4rem; }
+.margin-top-8 { margin-top: .8rem; }
+.margin-top-12 { margin-top: 1.2rem; }
+.margin-top-16 { margin-top: 1.6rem; }
+.margin-top-24 { margin-top: 2.4rem; }
+.margin-top-32 { margin-top: 3.2rem; }
+.margin-top-48 { margin-top: 4.8rem; }
+.margin-top-64 { margin-top: 6.4rem; }
+.margin-top-80 { margin-top: 8.0rem; }
+.margin-top-96 { margin-top: 9.6rem; }
+
+
+
+\\mg-bm margin-bottom
+
+.margin-bottom-auto { margin-bottom: auto; }
+.margin-bottom-0 { margin-bottom: 0; }
+.margin-bottom-2 { margin-bottom: .2rem; }
+.margin-bottom-4 { margin-bottom: .4rem; }
+.margin-bottom-8 { margin-bottom: .8rem; }
+.margin-bottom-12 { margin-bottom: 1.2rem; }
+.margin-bottom-16 { margin-bottom: 1.6rem; }
+.margin-bottom-24 { margin-bottom: 2.4rem; }
+.margin-bottom-32 { margin-bottom: 3.2rem; }
+.margin-bottom-48 { margin-bottom: 4.8rem; }
+.margin-bottom-64 { margin-bottom: 6.4rem; }
+.margin-bottom-80 { margin-bottom: 8.0rem; }
+.margin-bottom-96 { margin-bottom: 9.6rem; }
+
+
+/*
+\\pd padding This applies to all sides top, bottom, right and left
+*/
+
+.padding-0 { padding: 0; }
+.padding-2 { padding: .2rem; }
+.padding-4 { padding: .4rem;}
+.padding-8 { padding: .8rem; }
+.padding-12 { padding: 1.2rem; }
+.padding-16 { padding: 1.6rem; }
+.padding-24 { padding: 2.4rem; }
+.padding-32 { padding: 3.2rem; }
+.padding-48 { padding: 4.8rem; }
+.padding-64 { padding: 6.4rem; }
+.padding-80 { padding: 8.0rem; }
+.padding-96 { padding: 9.6rem; }
+
+
+\\pd-rt padding-right
+
+
+.padding-right-0 { padding-right: 0; }
+.padding-right-2 { padding-right: .2rem; }
+.padding-right-4 { padding-right: .4rem; }
+.padding-right-8 { padding-right: .8rem; }
+.padding-right-12 { padding-right: 1.2rem; }
+.padding-right-16 { padding-right: 1.6rem; }
+.padding-right-24 { padding-right: 2.4rem; }
+.padding-right-32 { padding-right: 3.2rem; }
+.padding-right-48 { padding-right: 4.8rem; }
+.padding-right-64 { padding-right: 6.4rem; }
+.padding-right-80 { padding-right: 8.0rem; }
+.padding-right-96 { padding-right: 9.6rem; }
+
+
+\\pd-lt padding-left
+
+
+.padding-left-0 { padding-left: 0; }
+.padding-left-2 { padding-left: .2rem; }
+.padding-left-4 { padding-left: .4rem; }
+.padding-left-8 { padding-left: .8rem; }
+.padding-left-12 { padding-left: 1.2rem; }
+.padding-left-16 { padding-left: 1.6rem; }
+.padding-left-24 { padding-left: 2.4rem; }
+.padding-left-32 { padding-left: 3.2rem; }
+.padding-left-48 { padding-left: 4.8rem; }
+.padding-left-64 { padding-left: 6.4rem; }
+.padding-left-80 { padding-left: 8.0rem; }
+.padding-left-96 { padding-left: 9.6rem; }
+
+
+
+\\pd-tp padding-top
+
+
+.padding-top-0 { padding-top: 0; }
+.padding-top-2 { padding-top: .2rem; }
+.padding-top-4 { padding-top: .4rem; }
+.padding-top-8 { padding-top: .8rem; }
+.padding-top-12 { padding-top: 1.2rem; }
+.padding-top-16 { padding-top: 1.6rem; }
+.padding-top-24 { padding-top: 2.4rem; }
+.padding-top-32 { padding-top: 3.2rem; }
+.padding-top-48 { padding-top: 4.8rem; }
+.padding-top-64 { padding-top: 6.4rem; }
+.padding-top-80 { padding-top: 8.0rem; }
+.padding-top-96 { padding-top: 9.6rem; }
+
+
+\\pd-bm padding-bottom
+
+
+.padding-bottom-0 { padding-bottom: 0; }
+.padding-bottom-2 { padding-bottom: .2rem; }
+.padding-bottom-4 { padding-bottom: .4rem; }
+.padding-bottom-8 { padding-bottom: .8rem; }
+.padding-bottom-12 { padding-bottom: 1.2rem; }
+.padding-bottom-16 { padding-bottom: 1.6rem; }
+.padding-bottom-24 { padding-bottom: 2.4rem; }
+.padding-bottom-32 { padding-bottom: 3.2rem; }
+.padding-bottom-48 { padding-bottom: 4.8rem; }
+.padding-bottom-64 { padding-bottom: 6.4rem; }
+.padding-bottom-80 { padding-bottom: 8.0rem; }
+.padding-bottom-96 { padding-bottom: 9.6rem; }

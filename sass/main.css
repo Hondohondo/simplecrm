@@ -1,0 +1,3591 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.166;
+  color: #333333;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  /* border: 3rem solid #38d9a9;
+   padding: 0 4.8rem 0 4.8rem;*/
+}
+
+a:link,
+a:visited {
+  color: #006699;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #006699;
+  text-decoration: underline;
+}
+
+/*1. GRAY*/
+.background-gray-00 {
+  background-color: #f8f9fa;
+}
+
+.background-gray-02 {
+  background-color: #e9ecef;
+}
+
+.background-gray-04 {
+  background-color: #ced4da;
+}
+
+.background-gray-05 {
+  background-color: #adb5bd;
+}
+
+.background-gray-07 {
+  background-color: #495057;
+}
+
+.background-gray-09 {
+  background-color: #212529;
+}
+
+.background-red-00 {
+  background-color: #fff5f5;
+}
+
+.background-red-02 {
+  background-color: #ffc9c9;
+}
+
+.background-red-04 {
+  background-color: #ff8787;
+}
+
+.background-red-05 {
+  background-color: #ff6b6b;
+}
+
+.background-red-07 {
+  background-color: #f03e3e;
+}
+
+.background-red-09 {
+  background-color: #c92a2a;
+}
+
+.background-pink-00 {
+  background-color: #fff0f6;
+}
+
+.background-pink-02 {
+  background-color: #fcc2d7;
+}
+
+.background-pink-04 {
+  background-color: #f783ac;
+}
+
+.background-pink-05 {
+  background-color: #f06595;
+}
+
+.background-pink-07 {
+  background-color: #d6336c;
+}
+
+.background-pink-09 {
+  background-color: #a61e4d;
+}
+
+.background-grape-00 {
+  background-color: #f8f0fc;
+}
+
+.background-grape-02 {
+  background-color: #eebefa;
+}
+
+.background-grape-04 {
+  background-color: #da77f2;
+}
+
+.background-grape-05 {
+  background-color: #cc5de8;
+}
+
+.background-grape-07 {
+  background-color: #ae3ec9;
+}
+
+.background-grape-09 {
+  background-color: #862e9c;
+}
+
+.background-magenta-00 {
+  background-color: #f8f0fc;
+}
+
+.background-magenta-02 {
+  background-color: #eebefa;
+}
+
+.background-magenta-04 {
+  background-color: #da77f2;
+}
+
+.background-magenta-05 {
+  background-color: #cc5de8;
+}
+
+.background-magenta-07 {
+  background-color: #ae3ec9;
+}
+
+.background-magenta-09 {
+  background-color: #862e9c;
+}
+
+.background-fuchsia-00 {
+  background-color: #f8f0fc;
+}
+
+.background-fuchsia-02 {
+  background-color: #eebefa;
+}
+
+.background-fuchsia-04 {
+  background-color: #da77f2;
+}
+
+.background-fuchsia-05 {
+  background-color: #cc5de8;
+}
+
+.background-fuchsia-07 {
+  background-color: #ae3ec9;
+}
+
+.background-fuchsia-09 {
+  background-color: #862e9c;
+}
+
+.background-violet-00 {
+  background-color: #f3f0ff;
+}
+
+.background-violet-02 {
+  background-color: #d0bfff;
+}
+
+.background-violet-04 {
+  background-color: #9775fa;
+}
+
+.background-violet-05 {
+  background-color: #845ef7;
+}
+
+.background-violet-07 {
+  background-color: #6D28D9;
+}
+
+.background-violet-09 {
+  background-color: #4C1D95;
+}
+
+.background-purple-00 {
+  background-color: #f3f0ff;
+}
+
+.background-purple-02 {
+  background-color: #d0bfff;
+}
+
+.background-purple-04 {
+  background-color: #9775fa;
+}
+
+.background-purple-05 {
+  background-color: #845ef7;
+}
+
+.background-purple-07 {
+  background-color: #7048e8;
+}
+
+.background-purple-09 {
+  background-color: #5f3dc4;
+}
+
+.background-blue-00 {
+  background-color: #e7f5ff;
+}
+
+.background-blue-02 {
+  background-color: #a5d8ff;
+}
+
+.background-blue-04 {
+  background-color: #4dabf7;
+}
+
+.background-blue-05 {
+  background-color: #339af0;
+}
+
+.background-blue-07 {
+  background-color: #1c7ed6;
+}
+
+.background-blue-09 {
+  background-color: #1864ab;
+}
+
+.background-cyan-00 {
+  background-color: #e3fafc;
+}
+
+.background-cyan-02 {
+  background-color: #99e9f2;
+}
+
+.background-cyan-04 {
+  background-color: #3bc9db;
+}
+
+.background-cyan-05 {
+  background-color: #22b8cf;
+}
+
+.background-cyan-07 {
+  background-color: #1098ad;
+}
+
+.background-cyan-09 {
+  background-color: #0b7285;
+}
+
+.background-teal-00 {
+  background-color: #e6fcf5;
+}
+
+.background-teal-02 {
+  background-color: #96f2d7;
+}
+
+.background-teal-04 {
+  background-color: #38d9a9;
+}
+
+.background-teal-05 {
+  background-color: #20c997;
+}
+
+.background-teal-07 {
+  background-color: #0ca678;
+}
+
+.background-teal-09 {
+  background-color: #087f5b;
+}
+
+.background-green-00 {
+  background-color: #ebfbee;
+}
+
+.background-green-02 {
+  background-color: #b2f2bb;
+}
+
+.background-green-04 {
+  background-color: #69db7c;
+}
+
+.background-green-05 {
+  background-color: #51cf66;
+}
+
+.background-green-07 {
+  background-color: #37b24d;
+}
+
+.background-green-09 {
+  background-color: #2b8a3e;
+}
+
+.background-yellow-00 {
+  background-color: #fff9db;
+}
+
+.background-yellow-02 {
+  background-color: #ffec99;
+}
+
+.background-yellow-04 {
+  background-color: #ffd43b;
+}
+
+.background-yellow-05 {
+  background-color: #fcc419;
+}
+
+.background-yellow-07 {
+  background-color: #f59f00;
+}
+
+.background-yellow-09 {
+  background-color: #e67700;
+}
+
+.background-orange-00 {
+  background-color: #fff4e6;
+}
+
+.background-orange-02 {
+  background-color: #ffd8a8;
+}
+
+.background-orange-04 {
+  background-color: #ffa94d;
+}
+
+.background-orange-05 {
+  background-color: #ff922b;
+}
+
+.background-orange-07 {
+  background-color: #f76707;
+}
+
+.background-orange-09 {
+  background-color: #d9480f;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.background-black {
+  background-color: #000;
+}
+
+/*1. GRAY*/
+.gray-00 {
+  color: #f8f9fa;
+}
+
+.gray-02 {
+  color: #e9ecef;
+}
+
+.gray-04 {
+  color: #ced4da;
+}
+
+.gray-05 {
+  color: #adb5bd;
+}
+
+.gray-07 {
+  color: #495057;
+}
+
+.gray-09 {
+  color: #212529;
+}
+
+.red-00 {
+  color: #fff5f5;
+}
+
+.red-02 {
+  color: #ffc9c9;
+}
+
+.red-04 {
+  color: #ff8787;
+}
+
+.red-05 {
+  color: #ff6b6b;
+}
+
+.red-07 {
+  color: #f03e3e;
+}
+
+.red-09 {
+  color: #c92a2a;
+}
+
+.pink-00 {
+  color: #fff0f6;
+}
+
+.pink-02 {
+  color: #fcc2d7;
+}
+
+.pink-04 {
+  color: #f783ac;
+}
+
+.pink-05 {
+  color: #f06595;
+}
+
+.pink-07 {
+  color: #d6336c;
+}
+
+.pink-09 {
+  color: #a61e4d;
+}
+
+.grape-00 {
+  color: #f8f0fc;
+}
+
+.grape-02 {
+  color: #eebefa;
+}
+
+.grape-04 {
+  color: #da77f2;
+}
+
+.grape-05 {
+  color: #cc5de8;
+}
+
+.grape-07 {
+  color: #ae3ec9;
+}
+
+.grape-09 {
+  color: #862e9c;
+}
+
+.magenta-00 {
+  color: #f8f0fc;
+}
+
+.magenta-02 {
+  color: #eebefa;
+}
+
+.magenta-04 {
+  color: #da77f2;
+}
+
+.magenta-05 {
+  color: #cc5de8;
+}
+
+.magenta-07 {
+  color: #ae3ec9;
+}
+
+.magenta-09 {
+  color: #862e9c;
+}
+
+.fuchsia-00 {
+  color: #f8f0fc;
+}
+
+.fuchsia-02 {
+  color: #eebefa;
+}
+
+.fuchsia-04 {
+  color: #da77f2;
+}
+
+.fuchsia-05 {
+  color: #cc5de8;
+}
+
+.fuchsia-07 {
+  color: #ae3ec9;
+}
+
+.fuchsia-09 {
+  color: #862e9c;
+}
+
+.violet-00 {
+  color: #f3f0ff;
+}
+
+.violet-02 {
+  color: #d0bfff;
+}
+
+.violet-04 {
+  color: #9775fa;
+}
+
+.violet-05 {
+  color: #845ef7;
+}
+
+.violet-07 {
+  color: #6D28D9;
+}
+
+.violet-09 {
+  color: #4C1D95;
+}
+
+.purple-00 {
+  color: #f3f0ff;
+}
+
+.purple-02 {
+  color: #d0bfff;
+}
+
+.purple-04 {
+  color: #9775fa;
+}
+
+.purple-05 {
+  color: #845ef7;
+}
+
+.purple-07 {
+  color: #7048e8;
+}
+
+.purple-09 {
+  color: #5f3dc4;
+}
+
+.blue-00 {
+  color: #e7f5ff;
+}
+
+.blue-02 {
+  color: #a5d8ff;
+}
+
+.blue-04 {
+  color: #4dabf7;
+}
+
+.blue-05 {
+  color: #339af0;
+}
+
+.blue-07 {
+  color: #1c7ed6;
+}
+
+.blue-09 {
+  color: #1864ab;
+}
+
+.cyan-00 {
+  color: #e3fafc;
+}
+
+.cyan-02 {
+  color: #99e9f2;
+}
+
+.cyan-04 {
+  color: #3bc9db;
+}
+
+.cyan-05 {
+  color: #22b8cf;
+}
+
+.cyan-07 {
+  color: #1098ad;
+}
+
+.cyan-09 {
+  color: #0b7285;
+}
+
+.teal-00 {
+  color: #e6fcf5;
+}
+
+.teal-02 {
+  color: #96f2d7;
+}
+
+.teal-04 {
+  color: #38d9a9;
+}
+
+.teal-05 {
+  color: #20c997;
+}
+
+.teal-07 {
+  color: #0ca678;
+}
+
+.teal-09 {
+  color: #087f5b;
+}
+
+.green-00 {
+  color: #ebfbee;
+}
+
+.green-02 {
+  color: #b2f2bb;
+}
+
+.green-04 {
+  color: #69db7c;
+}
+
+.green-05 {
+  color: #51cf66;
+}
+
+.green-07 {
+  color: #37b24d;
+}
+
+.green-09 {
+  color: #2b8a3e;
+}
+
+.yellow-00 {
+  color: #fff9db;
+}
+
+.yellow-02 {
+  color: #ffec99;
+}
+
+.yellow-04 {
+  color: #ffd43b;
+}
+
+.yellow-05 {
+  color: #fcc419;
+}
+
+.yellow-07 {
+  color: #f59f00;
+}
+
+.yellow-09 {
+  color: #e67700;
+}
+
+.orange-00 {
+  color: #fff4e6;
+}
+
+.orange-02 {
+  color: #ffd8a8;
+}
+
+.orange-04 {
+  color: #ffa94d;
+}
+
+.orange-05 {
+  color: #ff922b;
+}
+
+.orange-07 {
+  color: #f76707;
+}
+
+.orange-09 {
+  color: #d9480f;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.item {
+  border-top: 4px solid #087f5b;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2.4rem;
+  align-items: baseline;
+  background-color: white;
+}
+
+.item-2 {
+  border-top: 6px solid #0B7285;
+  background-color: white;
+  position: relative;
+}
+
+.item-3 {
+  border-left: 6px solid #0B7285;
+  background-color: white;
+}
+
+.text {
+  line-height: 1.2;
+}
+
+.number-2 {
+  /*  vertical-align: baseline;
+    color: #0B7285;
+    background-color: white;
+    background-color: red;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;*/
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+  color: #0B7285;
+  border-radius: 50%;
+}
+
+p.icon {
+  display: none;
+}
+
+.hidden-box {
+  grid-column: 2;
+}
+
+.hidden-box p {
+  font-size: 1.6rem;
+}
+
+.hidden-box ul {
+  display: none;
+}
+
+.quot {
+  color: #0B7285;
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  font-size: 9.6rem;
+  font-family: "Lora", serif !important;
+}
+
+.jung-img {
+  position: absolute;
+  top: 25%;
+  left: 95%;
+}
+
+.book-img {
+  position: absolute;
+  top: 25%;
+  left: 95%;
+}
+
+/*CTA BUTTONS*/
+.cta:link,
+.cta:visited {
+  padding: 1.6rem 3.2rem;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.cta-1:link,
+.cta-1:visited {
+  background-color: #087f5b;
+}
+
+.cta-1:hover,
+.cta-1:active {
+  background-color: #0ca678;
+}
+
+.cta-2:link,
+.cta-2:visited {
+  background-color: #a61e4d;
+}
+
+.cta-2:hover,
+.cta-2:active {
+  background-color: #d6336c;
+}
+
+.cta-3:link,
+.cta-3:visited {
+  background-color: #0b7285;
+}
+
+.cta-3:hover,
+.cta-3:active {
+  background-color: #1098ad;
+}
+
+.btn-round:link,
+.btn-round:visited {
+  display: inline-block;
+  background-color: #0ca678;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  margin-right: -1.6rem;
+  transition: all 0.3s;
+}
+
+.btn-round:hover,
+.btn-round:active {
+  background-color: #087f5b;
+}
+
+.border-radious-5 {
+  border-radius: 0.5rem;
+}
+
+.border-radious-10 {
+  border-radius: 1rem;
+}
+
+.border-radious-15 {
+  border-radius: 1.5rem;
+}
+
+.border-radious-20 {
+  border-radius: 2rem;
+}
+
+.border-radious-25 {
+  border-radius: 2.5rem;
+}
+
+.border-radious-30 {
+  border-radius: 3rem;
+}
+
+.border-radious-40 {
+  border-radius: 4rem;
+}
+
+.border-radious-50percent {
+  border-radius: 50%;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.outline-red {
+  outline: 1px solid red;
+}
+
+bd-inside {
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.shadow-1 {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-2 {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+.scale-11 {
+  transform: scale(1.1);
+}
+
+.scale-12 {
+  transform: scale(1.2);
+}
+
+.scale-13 {
+  transform: scale(1.3);
+}
+
+.scale-14 {
+  transform: scale(1.4);
+}
+
+.scale-15 {
+  transform: scale(1.5);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.border-1 {
+  border: 1px solid;
+}
+
+.border-2 {
+  border: 2px solid;
+}
+
+.border-3 {
+  border: 3px solid;
+}
+
+.border-bottom-1-black {
+  border-bottom: 1px solid black;
+}
+
+.border-bottom-2-black {
+  border-bottom: 2px solid black;
+}
+
+.border-bottom-2-white {
+  border-bottom: 2px solid white;
+}
+
+.border-bottom-4-white {
+  border-bottom: 4px solid white;
+}
+
+.border-top-1-black {
+  border-top: 1px solid black;
+}
+
+.border-right-1-black {
+  border-right: 1px solid black;
+}
+
+.heading::after {
+  /*content: " &nbsp; ";
+  color: #cf711f;
+  height: 2rem;
+  width: 2rem;
+  border-bottom: 4px solid blue;*/
+  display: block;
+  height: 2px;
+  background-color: #1864ab;
+  content: " ";
+  width: 10rem;
+  margin-top: 1.2rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+nav {
+  font-size: 1.6rem;
+}
+
+.nav-form {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 2rem;
+  background-color: #e6fcf5;
+  padding: 1.2rem 2.4rem;
+}
+
+.search-bar:focus {
+  border: none;
+}
+
+.search-button {
+  border-radius: 2rem;
+  margin-left: -4.8rem;
+  padding: 1.2rem 2.4rem;
+  border: 0;
+  color: white;
+  background-color: #20c997;
+}
+
+.heading-one {
+  line-height: 1.1;
+  font-size: 2.4rem;
+}
+
+.heading-two {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #334d55;
+  font-size: 2.4rem;
+}
+
+.heading-three {
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 2rem;
+  color: #334d55;
+}
+
+.heading-four {
+  line-height: 1.4;
+  font-size: 1.8rem;
+}
+
+/*
+
+I think it is as follows:
+
+h1 is 2 em (2*16=32px)
+h2 is 1.5 em (1.5*16=24px)
+h3 is 1.3 em (1.3*16=20.8px)
+h4 is 1 em (1 * 16 = 16px)
+h5 is 0.8 em (0.8 * 16 = 12.8px)
+h6 is 0.7 em (0.7 * 16 = 1.2px)
+An em is not the same as a pixel. It is a relative way of looking at sizes. With that said I think most browsers default to 16px (or 1em).
+font-weight for all is bolder, and the height of 1em is 16px (Also Normal text height is 1em)
+*/
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-table {
+  display: table;
+}
+
+/*
+.grid {
+  display: grid;
+  gap: 9.6rem; //applies both to row and column
+}*/
+.display-grid {
+  display: grid;
+}
+
+.display-inline-grid {
+  display: inline-grid;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.display-grid-columns-25percent-75percent {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.grid-columns-25-percent-75-percent {
+  grid-template-columns: 25% 75%;
+}
+
+.display-grid-columns-50percent-50percent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-columns-50-percent-50-percent {
+  grid-template-columns: 50% 50%;
+}
+
+.display-grid-columns-1fr-2fr {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-columns-1fr-2fr {
+  grid-template-columns: 1fr 2fr;
+}
+
+.display-grid-columns-1fr-1fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-columns-1fr-1fr {
+  grid-template-columns: 1fr 1fr;
+}
+
+.display-grid-columns-200-2fr-1fr {
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr;
+}
+
+.grid-columns-200-2fr-1fr {
+  grid-template-columns: 200px 2fr 1fr;
+}
+
+.display-grid-columns-200-1fr {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+}
+
+.grid-columns-1fr-auto {
+  grid-template-columns: 1fr auto;
+}
+
+.display-grid-1fr-auto {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.grid-columns-200-1fr {
+  grid-template-columns: 20rem 1fr;
+}
+
+.grid-columns-250-1fr-1fr-1fr-1fr-1fr {
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-columns-250-repeat-5-fr {
+  grid-template-columns: 250px repeat(5, 1fr);
+}
+
+.grid-columns-repeat-4-200 {
+  grid-template-columns: repeat(4, 200px);
+}
+
+.display-grid-rows-25percent-75percent {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.grid-rows-25-percent-75-percent {
+  grid-template-columns: 25% 75%;
+}
+
+.display-grid-rows-50percent-50percent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-rows-50-percent-50-percent {
+  grid-template-columns: 50% 50%;
+}
+
+.display-grid-rows-auto-1fr-auto {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.grid-rows-auto-1fr-auto {
+  grid-template-rows: auto 1fr auto;
+}
+
+.display-grid-rows-1fr-2fr {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.grid-rows-1fr-2fr {
+  grid-template-rows: 1fr 2fr;
+}
+
+.display-grid-rows-1fr-1fr {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-rows-1fr-1fr {
+  grid-template-rows: 1fr 1fr;
+}
+
+.display-grid-rows-1fr-1fr-1fr {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-rows-1fr-1fr-1fr {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.display-grid-rows-200-2fr-1fr {
+  display: grid;
+  grid-template-rows: 200px 2fr 1fr;
+}
+
+.grid-rows-200-2fr-1fr {
+  grid-template-rows: 200px 2fr 1fr;
+}
+
+.display-grid-rows-64-1fr-100 {
+  display: grid;
+  grid-template-rows: 64px 1fr 100px;
+}
+
+.display-grid-rows-64-1fr-100-full-page {
+  display: grid;
+  grid-template-rows: 64px 1fr 100px;
+  min-height: 100%;
+}
+
+.grid-rows-64-1fr-100 {
+  grid-template-rows: 64px 1fr 100px;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-flow-column {
+  grid-auto-flow: column;
+}
+
+.grid-4-columns-auto {
+  grid-template-columns: repeat(4, auto);
+}
+
+.display-grid-4-columns-auto {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-columns {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-6-columns {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-7-columns {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.display-grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.display-grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.display-grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.display-grid-4-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.display-grid-5-columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.display-grid-6-columns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.display-grid-7-columns {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-2-rows {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-3-rows {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-4-rows {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-5-rows {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-6-rows {
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.grid-7-rows {
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.display-grid-2-rows {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.display-grid-3-rows {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.display-grid-4-rows {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.display-grid-5-rows {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.display-grid-6-rows {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.display-grid-7-rows {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.grid-justify-center {
+  justify-content: center;
+}
+
+.grid-justify-start {
+  justify-content: start;
+}
+
+.grid-justify-end {
+  justify-content: end;
+}
+
+.grid-justify-between {
+  justify-content: space-between;
+}
+
+.grid-justify-around {
+  justify-content: space-around;
+}
+
+.grid-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.grid-justify-stretch {
+  justify-content: stretch;
+}
+
+.grid-center-vertical {
+  align-items: center;
+}
+
+.grid-self-center {
+  align-self: center;
+}
+
+.grid-items-center {
+  justify-items: center;
+}
+
+.grid-items-start {
+  justify-items: start;
+}
+
+.grid-items-end {
+  justify-items: end;
+}
+
+/*
+1.The grid container has a height value that is greater than the sum of individual
+row heights
+2. And when none of the grid items has a height specified in fr units
+*/
+.grid-align-center {
+  align-content: center;
+}
+
+.grid-align-start {
+  align-content: start;
+}
+
+.grid-align-end {
+  align-content: end;
+}
+
+.grid-align-between {
+  align-content: space-between;
+}
+
+.grid-align-around {
+  align-content: space-around;
+}
+
+.grid-align-evenly {
+  align-content: space-evenly;
+}
+
+.grid-align-stretch {
+  align-content: stretch;
+}
+
+.flex-align-center {
+  align-content: center;
+}
+
+.flex-align-start {
+  align-content: flex-start;
+}
+
+.flex-align-end {
+  align-content: flex-end;
+}
+
+.flex-align-between {
+  align-content: space-between;
+}
+
+.flex-align-around {
+  align-content: space-around;
+}
+
+.flex-align-evenly {
+  align-content: space-evenly;
+}
+
+.flex-align-stretch {
+  align-content: stretch;
+}
+
+/*
+The property place-content is a shorthand property in Grid that allows you to control
+the spacing of grid items along both the block and inline axes at once. It can specified with
+one or two values. (Align content + justify content)
+*/
+.place-content-center {
+  place-content: center;
+}
+
+.place-content-start {
+  place-content: start;
+}
+
+.place-content-end {
+  place-content: end;
+}
+
+.place-content-between {
+  place-content: space-between;
+}
+
+.place-content-around {
+  place-content: space-around;
+}
+
+.place-content-evenly {
+  place-content: space-evenly;
+}
+
+.place-content-stretch {
+  place-content: stretch;
+}
+
+.grid-place-center-between {
+  place-content: center space-between;
+}
+
+/*
+GRID PLACE ITEMS
+The property place-items is a shorthand property in Grid that allows you to align items
+along both the block and inline directions at once.
+. It can specified with one or two values. (Align Items + Justify items)
+*/
+.place-items-center {
+  place-items: center;
+}
+
+/*
+To center align horizontally within each column
+*/
+.justify-items-start {
+  justify-items: start;
+}
+
+.justify-items-end {
+  justify-items: end;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
+}
+
+/*
+The property align-items allows us to vertically align the content within the rows, while
+the previous property align-content allows us to vertically space out the entire rows.
+*/
+/*
+ To center align vertically within each row
+*/
+.grid-items-center {
+  align-items: center;
+}
+
+/*
+GRID COLUMN START  It specifies the item's start position.
+*/
+.column-start-1 {
+  grid-column-start: 1;
+}
+
+.column-start-2 {
+  grid-column-start: 2;
+}
+
+.column-start-3 {
+  grid-column-start: 3;
+}
+
+.column-start-4 {
+  grid-column-start: 4;
+}
+
+.column-start-5 {
+  grid-column-start: 5;
+}
+
+.column-start-minus {
+  grid-column-start: -1;
+}
+
+/*
+GRID COLUMN END  It specifies the item's end position.
+*/
+.column-end-1 {
+  grid-column-end: 1;
+}
+
+.column-end-2 {
+  grid-column-end: 2;
+}
+
+.column-end-3 {
+  grid-column-end: 3;
+}
+
+.column-end-4 {
+  grid-column-end: 4;
+}
+
+.column-end-5 {
+  grid-column-end: 5;
+}
+
+.column-end-minus {
+  grid-column-end: -1;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-inline-flex {
+  display: inline-flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-row-wrap {
+  flex-flow: row wrap;
+}
+
+.flex-column-wrap {
+  flex-flow: column wrap;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-center-horizontal {
+  justify-content: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-baseline {
+  align-self: baseline;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+
+.flex-align-end {
+  align-items: flex-end;
+}
+
+.flex-baseline {
+  align-items: baseline;
+}
+
+.flex-center-vertical {
+  align-items: center;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-start {
+  align-content: flex-start;
+}
+
+.align-content-end {
+  align-content: flex-end;
+}
+
+.align-content-between {
+  align-content: space-between;
+}
+
+.align-content-around {
+  align-content: space-around;
+}
+
+.align-content-evenly {
+  align-content: space-evenly;
+}
+
+.display-flex-center-both {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-flex-end-both {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-order-0 {
+  order: 0;
+}
+
+.flex-order-1 {
+  order: 1;
+}
+
+.flex-order-2 {
+  order: 2;
+}
+
+.flex-order-2 {
+  order: 3;
+}
+
+.flex-order-negative-1 {
+  order: -1;
+}
+
+.flex-75percent {
+  flex-basis: 75%;
+}
+
+.flex-70percent {
+  flex-basis: 70%;
+}
+
+.flex-65percent {
+  flex-basis: 65%;
+}
+
+.flex-60percent {
+  flex-basis: 60%;
+}
+
+.flex-50percent {
+  flex-basis: 50%;
+}
+
+.flex-40percent {
+  flex-basis: 40%;
+}
+
+.flex-35percent {
+  flex-basis: 35%;
+}
+
+.flex-30percent {
+  flex-basis: 30%;
+}
+
+.flex-25percent {
+  flex-basis: 25%;
+}
+
+.flex-20percent {
+  flex-basis: 20%;
+}
+
+.flex-15percent {
+  flex-basis: 15%;
+}
+
+.flex-10percent {
+  flex-basis: 10%;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+/*will occupy double the space*/
+.flex-grow-3 {
+  flex-grow: 3;
+}
+
+/*will occupy three times the space*/
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-grow-0-shrink-1 {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.flex-grow-1-shrink-0 {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.width-max-content {
+  width: max-content;
+}
+
+.width-min-content {
+  width: min-content;
+}
+
+.width-fit-content {
+  width: fit-content;
+}
+
+.width-100percent {
+  width: 100%;
+}
+
+.width-90percent {
+  width: 90%;
+}
+
+.width-80percent {
+  width: 80%;
+}
+
+.width-70percent {
+  width: 70%;
+}
+
+.width-60percent {
+  width: 60%;
+}
+
+.width-50percent {
+  width: 50%;
+}
+
+.width-40percent {
+  width: 40%;
+}
+
+.width-35percent {
+  width: 35%;
+}
+
+.width-30percent {
+  width: 30%;
+}
+
+.width-0 {
+  width: 0;
+}
+
+.width-2 {
+  width: 0.2rem;
+}
+
+.width-4 {
+  width: 0.4rem;
+}
+
+.width-8 {
+  width: 0.8rem;
+}
+
+.width-12 {
+  width: 1.2rem;
+}
+
+.width-16 {
+  width: 1.6rem;
+}
+
+.width-24 {
+  width: 2.4rem;
+}
+
+.width-32 {
+  width: 3.2rem;
+}
+
+.width-48 {
+  width: 4.8rem;
+}
+
+.width-64 {
+  width: 6.4rem;
+}
+
+.width-80 {
+  width: 8rem;
+}
+
+.width-96 {
+  width: 9.6rem;
+}
+
+.width-120 {
+  width: 12rem;
+}
+
+.width-160 {
+  width: 16rem;
+}
+
+.width-240 {
+  width: 24rem;
+}
+
+.width-320 {
+  width: 32rem;
+}
+
+.width-480 {
+  width: 48rem;
+}
+
+.width-640 {
+  width: 64rem;
+}
+
+.width-700 {
+  width: 70rem;
+}
+
+.width-800 {
+  width: 80rem;
+}
+
+.width-900 {
+  width: 90rem;
+}
+
+.width-960 {
+  width: 96rem;
+}
+
+.max-width-120 {
+  max-width: 12rem;
+}
+
+.max-width-160 {
+  max-width: 16rem;
+}
+
+.max-width-240 {
+  max-width: 24rem;
+}
+
+.max-width-320 {
+  max-width: 32rem;
+}
+
+.max-width-480 {
+  max-width: 48rem;
+}
+
+.max-width-640 {
+  max-width: 64rem;
+}
+
+.max-width-700 {
+  max-width: 70rem;
+}
+
+.max-width-800 {
+  max-width: 80rem;
+}
+
+.max-width-900 {
+  max-width: 90rem;
+}
+
+.max-width-960 {
+  max-width: 96rem;
+}
+
+.min-width-120 {
+  min-width: 12rem;
+}
+
+.min-width-160 {
+  min-width: 16rem;
+}
+
+.min-width-240 {
+  min-width: 24rem;
+}
+
+.min-width-320 {
+  min-width: 32rem;
+}
+
+.min-width-480 {
+  min-width: 48rem;
+}
+
+.min-width-640 {
+  min-width: 64rem;
+}
+
+.min-width-700 {
+  min-width: 70rem;
+}
+
+.min-width-800 {
+  min-width: 80rem;
+}
+
+.min-width-900 {
+  min-width: 90rem;
+}
+
+.min-width-960 {
+  min-width: 96rem;
+}
+
+.height-100percent {
+  height: 100%;
+}
+
+.height-90percent {
+  height: 90%;
+}
+
+.height-80percent {
+  height: 80%;
+}
+
+.height-70percent {
+  height: 70%;
+}
+
+.height-60percent {
+  height: 60%;
+}
+
+.height-50percent {
+  height: 50%;
+}
+
+.height-40percent {
+  height: 40%;
+}
+
+.height-35percent {
+  height: 35%;
+}
+
+.height-30percent {
+  height: 30%;
+}
+
+.height-0 {
+  height: 0;
+}
+
+.height-2 {
+  height: 0.2rem;
+}
+
+.height-4 {
+  height: 0.4rem;
+}
+
+.height-8 {
+  height: 0.8rem;
+}
+
+.height-12 {
+  height: 1.2rem;
+}
+
+.height-16 {
+  height: 1.6rem;
+}
+
+.height-24 {
+  height: 2.4rem;
+}
+
+.height-32 {
+  height: 3.2rem;
+}
+
+.height-48 {
+  height: 4.8rem;
+}
+
+.height-64 {
+  height: 6.4rem;
+}
+
+.height-80 {
+  height: 8rem;
+}
+
+.height-96 {
+  height: 9.6rem;
+}
+
+.height-120 {
+  height: 12rem;
+}
+
+.height-160 {
+  height: 16rem;
+}
+
+.height-240 {
+  height: 24rem;
+}
+
+.height-320 {
+  height: 32rem;
+}
+
+.height-480 {
+  height: 48rem;
+}
+
+.height-640 {
+  height: 64rem;
+}
+
+.height-700 {
+  height: 70rem;
+}
+
+.height-800 {
+  height: 80rem;
+}
+
+.height-900 {
+  height: 90rem;
+}
+
+.height-960 {
+  height: 96rem;
+}
+
+.min-height-100percent {
+  min-height: 100%;
+}
+
+.min-height-90percent {
+  min-height: 90%;
+}
+
+.min-height-80percent {
+  min-height: 80%;
+}
+
+.min-height-70percent {
+  min-height: 70%;
+}
+
+.min-height-60percent {
+  min-height: 60%;
+}
+
+.min-height-50percent {
+  min-height: 50%;
+}
+
+.min-height-40percent {
+  min-height: 40%;
+}
+
+.min-height-35percent {
+  min-height: 35%;
+}
+
+.min-height-30percent {
+  min-height: 30%;
+}
+
+.min-height-100vh {
+  min-height: 100vh;
+}
+
+.min-height-90vh {
+  min-height: 90vh;
+}
+
+.min-height-80vh {
+  min-height: 80vh;
+}
+
+.min-height-70vh {
+  min-height: 70vh;
+}
+
+.min-height-60vh {
+  min-height: 60vh;
+}
+
+.min-height-50vh {
+  min-height: 50vh;
+}
+
+.min-height-40vh {
+  min-height: 40vh;
+}
+
+.min-height-35vh {
+  min-height: 35vh;
+}
+
+.min-height-30vh {
+  min-height: 30vh;
+}
+
+/*Page Links*/
+.page-link:link,
+.page-link:visited {
+  text-decoration: none;
+  color: #1c7ed6;
+  transition: all 0.2s;
+}
+
+.page-link:hover,
+.page-link:active {
+  color: #1864ab;
+}
+
+.page-link-1:link,
+.page-link-1:visited {
+  text-decoration: none;
+  color: #495057;
+  color: #f783ac;
+  color: #ffd43b;
+  transition: all 0.2s;
+}
+
+.page-link-1:hover,
+.page-link-1:active {
+  color: #adb5bd;
+}
+
+/*
+.special-link:link,
+.special-link:visited {
+  text-decoration: none;
+  color: #f76707;
+  transition: all .2s;
+}*/
+.special {
+  color: #f76707;
+  transition: all 0.3s;
+}
+
+.special:hover,
+.special:active {
+  color: #d9480f;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+}
+
+/*FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98*/
+.font-size-10 {
+  font-size: 1rem;
+}
+
+.font-size-12 {
+  font-size: 1.2rem;
+}
+
+.font-size-14 {
+  font-size: 1.4rem;
+}
+
+.font-size-16 {
+  font-size: 1.6rem;
+}
+
+.font-size-18 {
+  font-size: 1.8rem;
+}
+
+.font-size-20 {
+  font-size: 2rem;
+}
+
+.font-size-24 {
+  font-size: 2.4rem;
+}
+
+.font-size-30 {
+  font-size: 3rem;
+}
+
+.font-size-36 {
+  font-size: 3.6rem;
+}
+
+.font-size-44 {
+  font-size: 4.4rem;
+}
+
+.font-size-52 {
+  font-size: 5.2rem;
+}
+
+.font-size-62 {
+  font-size: 6.2rem;
+}
+
+.font-size-74 {
+  font-size: 7.4rem;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.line-height-10 {
+  line-height: 1;
+}
+
+.line-height-11 {
+  line-height: 1.1;
+}
+
+.line-height-12 {
+  line-height: 1.2;
+}
+
+.line-height-13 {
+  line-height: 1.3;
+}
+
+.line-height-14 {
+  line-height: 1.4;
+}
+
+.line-height-15 {
+  line-height: 1.5;
+}
+
+.line-height-16 {
+  line-height: 1.6;
+}
+
+.line-height-17 {
+  line-height: 1.7;
+}
+
+.line-height-18 {
+  line-height: 1.8;
+}
+
+.letter-space-05 {
+  letter-spacing: 0.5px;
+}
+
+.letter-space-075 {
+  letter-spacing: 0.75px;
+}
+
+.letter-space-1 {
+  letter-spacing: 1px;
+}
+
+.letter-space-2 {
+  letter-spacing: 2px;
+}
+
+.letter-space-3 {
+  letter-spacing: 3px;
+}
+
+.letter-space-4 {
+  letter-spacing: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.unordered-list {
+  list-style: none;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.unordered-list li {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.list-style {
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: #087f5b;
+}
+
+/*SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+12 values
+Using this system you can be creative by coming up with new values - let's say you want a div with width of 720px, Well We don't have 72rem, but we have 80rem. So you can have a container with 80rem and make it have padding left and right of 4rem ...and there you have it. 72rem.
+Also as a trick when using your own custom classes but don't want to come up with new values...You can try to see what are the center values. E.g we have 48 and 64 now what if 48 is too small and 64 is too large...instead of just guessing you can find a middle point between 48 and 64 and that is 56.
+These same tricks can be used when working with the font system too. But in fonts...Avoiding values that have odd numbers in them. Let's say you think font size of 30 is a bit too small, and the next one of 36 is a bit too big...Instead of picking the mid point of 3, you can just add 2 from 30 and get 32 or omit 2 from 36 and get 34, Odd numbers as font sizes looks a bif odd (pun intended) in my opinion
+*/
+/*FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+15 values
+*/
+/*If I combine the two systems here is what I get (I highly doubt if I will use this...It's too much -- so many values to pick from)
+
+2 / 4 / 8 / 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 32 / 36 / 44 / 48 / 52 / 62 / 64 / 74 / 80 / 86 / 96 / 98 / 128
+
+24 values
+*/
+.gap-0 {
+  gap: 0;
+}
+
+.gap-2 {
+  gap: 0.2rem;
+}
+
+.gap-4 {
+  gap: 0.4rem;
+}
+
+.gap-8 {
+  gap: 0.8rem;
+}
+
+.gap-12 {
+  gap: 1.2rem;
+}
+
+.gap-16 {
+  gap: 1.6rem;
+}
+
+.gap-24 {
+  gap: 2.4rem;
+}
+
+.gap-32 {
+  gap: 3.2rem;
+}
+
+.gap-48 {
+  gap: 4.8rem;
+}
+
+.gap-64 {
+  gap: 6.4rem;
+}
+
+.gap-80 {
+  gap: 8rem;
+}
+
+.gap-96 {
+  gap: 9.6rem;
+}
+
+.row-gap-0 {
+  row-gap: 0;
+}
+
+.row-gap-2 {
+  row-gap: 0.2rem;
+}
+
+.row-gap-4 {
+  row-gap: 0.4rem;
+}
+
+.row-gap-8 {
+  row-gap: 0.8rem;
+}
+
+.row-gap-12 {
+  row-gap: 1.2rem;
+}
+
+.row-gap-16 {
+  row-gap: 1.6rem;
+}
+
+.row-gap-24 {
+  row-gap: 2.4rem;
+}
+
+.row-gap-32 {
+  row-gap: 3.2rem;
+}
+
+.row-gap-48 {
+  row-gap: 4.8rem;
+}
+
+.row-gap-64 {
+  row-gap: 6.4rem;
+}
+
+.row-gap-80 {
+  row-gap: 8rem;
+}
+
+.row-gap-96 {
+  row-gap: 9.6rem;
+}
+
+.column-gap-0 {
+  column-gap: 0;
+}
+
+.column-gap-2 {
+  column-gap: 0.2rem;
+}
+
+.column-gap-4 {
+  column-gap: 0.4rem;
+}
+
+.column-gap-8 {
+  column-gap: 0.8rem;
+}
+
+.column-gap-12 {
+  column-gap: 1.2rem;
+}
+
+.column-gap-16 {
+  column-gap: 1.6rem;
+}
+
+.column-gap-24 {
+  column-gap: 2.4rem;
+}
+
+.column-gap-32 {
+  column-gap: 3.2rem;
+}
+
+.column-gap-48 {
+  column-gap: 4.8rem;
+}
+
+.column-gap-64 {
+  column-gap: 6.4rem;
+}
+
+.column-gap-80 {
+  column-gap: 8rem;
+}
+
+.column-gap-96 {
+  column-gap: 9.6rem;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+/*
+\\mg margin This apply to all sides top, bottom, right and left
+*/
+.margin-auto {
+  margin: auto;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-2 {
+  margin: 0.2rem;
+}
+
+.margin-4 {
+  margin: 0.4rem;
+}
+
+.margin-8 {
+  margin: 0.8rem;
+}
+
+.margin-12 {
+  margin: 1.2rem;
+}
+
+.margin-16 {
+  margin: 1.6rem;
+}
+
+.margin-24 {
+  margin: 2.4rem;
+}
+
+.margin-32 {
+  margin: 3.2rem;
+}
+
+.margin-48 {
+  margin: 4.8rem;
+}
+
+.margin-64 {
+  margin: 6.4rem;
+}
+
+.margin-80 {
+  margin: 8rem;
+}
+
+.margin-96 {
+  margin: 9.6rem;
+}
+
+\\mg-rt margin-right .margin-right-auto {
+  margin-right: auto;
+}
+
+.margin-right-0 {
+  margin-right: 0;
+}
+
+.margin-right-2 {
+  margin-right: 0.2rem;
+}
+
+.margin-right-4 {
+  margin-right: 0.4rem;
+}
+
+.margin-right-8 {
+  margin-right: 0.8rem;
+}
+
+.margin-right-12 {
+  margin-right: 1.2rem;
+}
+
+.margin-right-16 {
+  margin-right: 1.6rem;
+}
+
+.margin-right-24 {
+  margin-right: 2.4rem;
+}
+
+.margin-right-32 {
+  margin-right: 3.2rem;
+}
+
+.margin-right-48 {
+  margin-right: 4.8rem;
+}
+
+.margin-right-64 {
+  margin-right: 6.4rem;
+}
+
+.margin-right-80 {
+  margin-right: 8rem;
+}
+
+.margin-right-96 {
+  margin-right: 9.6rem;
+}
+
+\\mg-lt margin-left .margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-left-0 {
+  margin-left: 0;
+}
+
+.margin-left-2 {
+  margin-left: 0.2rem;
+}
+
+.margin-left-4 {
+  margin-left: 0.4rem;
+}
+
+.margin-left-8 {
+  margin-left: 0.8rem;
+}
+
+.margin-left-12 {
+  margin-left: 1.2rem;
+}
+
+.margin-left-16 {
+  margin-left: 1.6rem;
+}
+
+.margin-left-24 {
+  margin-left: 2.4rem;
+}
+
+.margin-left-32 {
+  margin-left: 3.2rem;
+}
+
+.margin-left-48 {
+  margin-left: 4.8rem;
+}
+
+.margin-left-64 {
+  margin-left: 6.4rem;
+}
+
+.margin-left-80 {
+  margin-left: 8rem;
+}
+
+.margin-left-96 {
+  margin-left: 9.6rem;
+}
+
+\\mg-tp margin-top .margin-top-auto {
+  margin-top: auto;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.margin-top-2 {
+  margin-top: 0.2rem;
+}
+
+.margin-top-4 {
+  margin-top: 0.4rem;
+}
+
+.margin-top-8 {
+  margin-top: 0.8rem;
+}
+
+.margin-top-12 {
+  margin-top: 1.2rem;
+}
+
+.margin-top-16 {
+  margin-top: 1.6rem;
+}
+
+.margin-top-24 {
+  margin-top: 2.4rem;
+}
+
+.margin-top-32 {
+  margin-top: 3.2rem;
+}
+
+.margin-top-48 {
+  margin-top: 4.8rem;
+}
+
+.margin-top-64 {
+  margin-top: 6.4rem;
+}
+
+.margin-top-80 {
+  margin-top: 8rem;
+}
+
+.margin-top-96 {
+  margin-top: 9.6rem;
+}
+
+\\mg-bm margin-bottom .margin-bottom-auto {
+  margin-bottom: auto;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 0.2rem;
+}
+
+.margin-bottom-4 {
+  margin-bottom: 0.4rem;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 0.8rem;
+}
+
+.margin-bottom-12 {
+  margin-bottom: 1.2rem;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 1.6rem;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 2.4rem;
+}
+
+.margin-bottom-32 {
+  margin-bottom: 3.2rem;
+}
+
+.margin-bottom-48 {
+  margin-bottom: 4.8rem;
+}
+
+.margin-bottom-64 {
+  margin-bottom: 6.4rem;
+}
+
+.margin-bottom-80 {
+  margin-bottom: 8rem;
+}
+
+.margin-bottom-96 {
+  margin-bottom: 9.6rem;
+}
+
+/*
+\\pd padding This applies to all sides top, bottom, right and left
+*/
+.padding-0 {
+  padding: 0;
+}
+
+.padding-2 {
+  padding: 0.2rem;
+}
+
+.padding-4 {
+  padding: 0.4rem;
+}
+
+.padding-8 {
+  padding: 0.8rem;
+}
+
+.padding-12 {
+  padding: 1.2rem;
+}
+
+.padding-16 {
+  padding: 1.6rem;
+}
+
+.padding-24 {
+  padding: 2.4rem;
+}
+
+.padding-32 {
+  padding: 3.2rem;
+}
+
+.padding-48 {
+  padding: 4.8rem;
+}
+
+.padding-64 {
+  padding: 6.4rem;
+}
+
+.padding-80 {
+  padding: 8rem;
+}
+
+.padding-96 {
+  padding: 9.6rem;
+}
+
+\\pd-rt padding-right .padding-right-0 {
+  padding-right: 0;
+}
+
+.padding-right-2 {
+  padding-right: 0.2rem;
+}
+
+.padding-right-4 {
+  padding-right: 0.4rem;
+}
+
+.padding-right-8 {
+  padding-right: 0.8rem;
+}
+
+.padding-right-12 {
+  padding-right: 1.2rem;
+}
+
+.padding-right-16 {
+  padding-right: 1.6rem;
+}
+
+.padding-right-24 {
+  padding-right: 2.4rem;
+}
+
+.padding-right-32 {
+  padding-right: 3.2rem;
+}
+
+.padding-right-48 {
+  padding-right: 4.8rem;
+}
+
+.padding-right-64 {
+  padding-right: 6.4rem;
+}
+
+.padding-right-80 {
+  padding-right: 8rem;
+}
+
+.padding-right-96 {
+  padding-right: 9.6rem;
+}
+
+\\pd-lt padding-left .padding-left-0 {
+  padding-left: 0;
+}
+
+.padding-left-2 {
+  padding-left: 0.2rem;
+}
+
+.padding-left-4 {
+  padding-left: 0.4rem;
+}
+
+.padding-left-8 {
+  padding-left: 0.8rem;
+}
+
+.padding-left-12 {
+  padding-left: 1.2rem;
+}
+
+.padding-left-16 {
+  padding-left: 1.6rem;
+}
+
+.padding-left-24 {
+  padding-left: 2.4rem;
+}
+
+.padding-left-32 {
+  padding-left: 3.2rem;
+}
+
+.padding-left-48 {
+  padding-left: 4.8rem;
+}
+
+.padding-left-64 {
+  padding-left: 6.4rem;
+}
+
+.padding-left-80 {
+  padding-left: 8rem;
+}
+
+.padding-left-96 {
+  padding-left: 9.6rem;
+}
+
+\\pd-tp padding-top .padding-top-0 {
+  padding-top: 0;
+}
+
+.padding-top-2 {
+  padding-top: 0.2rem;
+}
+
+.padding-top-4 {
+  padding-top: 0.4rem;
+}
+
+.padding-top-8 {
+  padding-top: 0.8rem;
+}
+
+.padding-top-12 {
+  padding-top: 1.2rem;
+}
+
+.padding-top-16 {
+  padding-top: 1.6rem;
+}
+
+.padding-top-24 {
+  padding-top: 2.4rem;
+}
+
+.padding-top-32 {
+  padding-top: 3.2rem;
+}
+
+.padding-top-48 {
+  padding-top: 4.8rem;
+}
+
+.padding-top-64 {
+  padding-top: 6.4rem;
+}
+
+.padding-top-80 {
+  padding-top: 8rem;
+}
+
+.padding-top-96 {
+  padding-top: 9.6rem;
+}
+
+\\pd-bm padding-bottom .padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.padding-bottom-2 {
+  padding-bottom: 0.2rem;
+}
+
+.padding-bottom-4 {
+  padding-bottom: 0.4rem;
+}
+
+.padding-bottom-8 {
+  padding-bottom: 0.8rem;
+}
+
+.padding-bottom-12 {
+  padding-bottom: 1.2rem;
+}
+
+.padding-bottom-16 {
+  padding-bottom: 1.6rem;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 2.4rem;
+}
+
+.padding-bottom-32 {
+  padding-bottom: 3.2rem;
+}
+
+.padding-bottom-48 {
+  padding-bottom: 4.8rem;
+}
+
+.padding-bottom-64 {
+  padding-bottom: 6.4rem;
+}
+
+.padding-bottom-80 {
+  padding-bottom: 8rem;
+}
+
+.padding-bottom-96 {
+  padding-bottom: 9.6rem;
+}
+
+/*******************************/
+/**HEADER**/
+/*******************************/
+#header {
+  height: 12rem;
+  padding: 2.4rem;
+}
+
+.logo {
+  height: 12.8rem;
+}
+
+/*******************************/
+/**NAVIGATION**/
+/*******************************/
+#nav {
+  /*border-bottom: 1px solid #E2EAEF;
+  border-top: 1px solid #E2EAEF;
+  border-right: 1px solid #E2EAEF;*/
+  margin-top: -1.6rem;
+  padding: 2.4rem 8rem 3.2rem 8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+#main {
+  padding: 4rem 8rem;
+  margin-top: -0.6rem;
+}
+
+#news {
+  padding: 0.5rem;
+  border-top: 1px solid #E2EAEF;
+  border-left: 1px solid #E2EAEF;
+  background-color: #f3f6f8;
+  min-height: 27.5rem;
+}
+
+#footer {
+  text-align: center;
+  padding: 0.7rem;
+  border-bottom: 1px solid #E2EAEF;
+  border-top: 1px solid #E2EAEF;
+  background-color: #f3f6f8;
+}
+
+.body-container {
+  position: relative;
+}
+
+.btn-login:link, .btn-login:visited {
+  position: absolute;
+  top: 4rem;
+  right: 8rem;
+  color: #e6fcf5;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-login:hover, .btn-login:active {
+  color: #96f2d7;
+}
+
+.btn-register:link, .btn-register:visited {
+  position: absolute;
+  top: 4rem;
+  right: 16rem;
+  color: #96f2d7;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-register:hover, .btn-register:active {
+  color: #e6fcf5;
+}
+
+.form-register {
+  font-size: 1.6rem;
+  max-width: 48rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+.form-group label {
+  display: block;
+  padding: 0.4rem 0;
+  font-weight: 600;
+}
+.form-group input {
+  width: 100%;
+  display: block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+  border: 1px solid #96f2d7;
+  color: inherit;
+  font-family: inherit;
+}
+.form-group textarea {
+  width: 100%;
+  display: block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+  border: 1px solid #96f2d7;
+  resize: vertical;
+  color: inherit;
+  font-family: inherit;
+}
+
+.submit-btn {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #e6fcf5 !important;
+  background-color: #087f5b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #0ca678;
+}
+
+.section-hero {
+  background-color: #fff9db;
+  padding: 1.6rem 0 4.8rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.hero-2 {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.para-2 {
+  font-style: italic;
+  margin-top: 3.2rem;
+}
+
+.para-3 {
+  margin-top: 3.2rem;
+  font-weight: bold;
+}
+
+.heading-primary {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: background-color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+  /*Trick to add border inside*/
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.hero-img {
+  border-radius: 2rem;
+  width: 24rem;
+}
+
+.delivered-meals {
+  display: flex;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+}
+
+input[type=submit] {
+  /* color: white;
+   background-color: #0b7285 ;
+   border: 0;
+   border-radius: 5px;
+
+   transition: all .3s;*/
+}
+
+input[type=submit]:hover {
+  /*  background-color: #e3fafc;
+    color: #0b7285 ;*/
+}
+
+.form-messages {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  padding: 1.6rem 3.2rem;
+  border-radius: 3px;
+}
+
+.success {
+  background-color: #2b8a3e;
+}
+
+.green-success {
+  background-color: white;
+  color: #2b8a3e;
+}
+
+.red-error {
+  background-color: white;
+  color: #c92a2a;
+}
+
+.error {
+  background-color: #c92a2a;
+}
+
+.img-box {
+  /*width: 32rem;
+  height: 100%;
+  background-size: cover;
+  background-position: center;*/
+}
+
+.img-1 {
+  background-image: url("../images/overview-1.png");
+  background-size: cover;
+}
+
+.img-2 {
+  background-image: url("../images/overview-2.png");
+  background-size: cover;
+}
+
+.img-4 {
+  background-image: url("../images/landing-img-4.png");
+  background-size: cover;
+}
+
+.img-3b {
+  background-image: url("../images/overview-3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-5 {
+  background-image: url("../images/landing-img-5.png");
+  background-size: cover;
+}
+
+.img-ira-2 {
+  background-image: url("../images/progoff-2.png");
+  background-size: cover;
+}
+
+/*Videos and Videos Embeds*/
+.video {
+  /*  width: 32rem;
+    height: 24rem;*/
+  /*  width: 56rem;
+    height: 31.5rem;*/
+  width: 48rem;
+  /*margin-top: -3.2rem;
+  margin-bottom: 3.2rem;*/
+  border-radius: 1rem;
+}
+
+/*width="560" height="315"*/
+.youtube-iframe {
+  width: 56rem;
+  height: 31.5rem;
+}
+
+.section-next-steps {
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

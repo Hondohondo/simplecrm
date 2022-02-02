@@ -1,0 +1,47 @@
+//HEADINGS
+
+.heading-one {
+//line-height: 1.1;
+//  font-family: 'Cardo', serif;
+  line-height: 1.1;
+  //color: #334d55;
+  font-size: 2.4rem;
+}
+.heading-two {
+  //font-family: 'Lora', serif;
+  //font-family: 'Cardo', serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #334d55;
+  font-size: 2.4rem;
+}
+
+.heading-three {
+  //font-family: 'Lora', serif;
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 2rem;
+  color: #334d55;
+}
+
+.heading-four {
+  //font-family: 'Lora', serif;
+  //font-weight: 500;
+  line-height: 1.4;
+  //color: #334d55;
+  font-size: 1.8rem;
+}
+
+/*
+
+I think it is as follows:
+
+h1 is 2 em (2*16=32px)
+h2 is 1.5 em (1.5*16=24px)
+h3 is 1.3 em (1.3*16=20.8px)
+h4 is 1 em (1 * 16 = 16px)
+h5 is 0.8 em (0.8 * 16 = 12.8px)
+h6 is 0.7 em (0.7 * 16 = 1.2px)
+An em is not the same as a pixel. It is a relative way of looking at sizes. With that said I think most browsers default to 16px (or 1em).
+font-weight for all is bolder, and the height of 1em is 16px (Also Normal text height is 1em)
+*/

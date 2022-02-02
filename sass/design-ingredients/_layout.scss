@@ -1,0 +1,712 @@
+
+//Layouts
+
+//Positions
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+//Overflows
+.overflow-hidden { overflow: hidden;}
+
+//Displays
+.display-block { display: block;}
+.display-inline { display: inline;}
+.display-inline-block {display: inline-block;}
+.display-none { display: none;}
+
+//Table - will be explored more later
+.display-table { display: table;}
+
+
+
+//Grid Layout (Needs grid container (parent) + Grid item (child)
+/*
+.grid {
+  display: grid;
+  gap: 9.6rem; //applies both to row and column
+}*/
+
+.display-grid {
+  display: grid;
+}
+
+.display-inline-grid {
+  display: inline-grid;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+//Grid Templates Columns
+.display-grid-columns-25percent-75percent {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.grid-columns-25-percent-75-percent {
+  grid-template-columns: 25% 75%;
+}
+
+.display-grid-columns-50percent-50percent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-columns-50-percent-50-percent {
+  grid-template-columns: 50% 50%;
+}
+
+.display-grid-columns-1fr-2fr {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-columns-1fr-2fr {
+  grid-template-columns: 1fr 2fr;
+}
+.display-grid-columns-1fr-1fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-columns-1fr-1fr {
+  grid-template-columns: 1fr 1fr;
+}
+
+.display-grid-columns-200-2fr-1fr {
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr;
+}
+
+.grid-columns-200-2fr-1fr {
+  grid-template-columns: 200px 2fr 1fr;
+}
+
+.display-grid-columns-200-1fr { //a fixed sidebar, with content on the right taking remaining space
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+}
+.grid-columns-1fr-auto { //first column as much space, second column auto according to its content
+  grid-template-columns: 1fr auto;
+}
+
+.display-grid-1fr-auto { //a fixed sidebar, with content on the right taking remaining space
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.grid-columns-200-1fr {
+  grid-template-columns: 20rem 1fr;
+}
+
+.grid-columns-250-1fr-1fr-1fr-1fr-1fr {
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-columns-250-repeat-5-fr {
+  grid-template-columns: 250px repeat(5, 1fr);
+}
+
+.grid-columns-repeat-4-200 {
+  grid-template-columns: repeat(4, 200px);
+}
+
+
+
+//Grid Template Rows
+.display-grid-rows-25percent-75percent {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.grid-rows-25-percent-75-percent {
+  grid-template-columns: 25% 75%;
+}
+.display-grid-rows-50percent-50percent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-rows-50-percent-50-percent {
+  grid-template-columns: 50% 50%;
+}
+
+.display-grid-rows-auto-1fr-auto { //use case: if you want the content in the middle to expand...and the footer to be at the very bottom, you may also need to set min-height of 100vh
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.grid-rows-auto-1fr-auto {
+  grid-template-rows: auto 1fr auto;
+}
+
+.display-grid-rows-1fr-2fr {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.grid-rows-1fr-2fr {
+  grid-template-rows: 1fr 2fr;
+}
+.display-grid-rows-1fr-1fr {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-rows-1fr-1fr {
+  grid-template-rows: 1fr 1fr;
+}
+
+.display-grid-rows-1fr-1fr-1fr { //one column three rows
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-rows-1fr-1fr-1fr {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.display-grid-rows-200-2fr-1fr {
+  display: grid;
+  grid-template-rows: 200px 2fr 1fr;
+}
+
+.grid-rows-200-2fr-1fr {
+  grid-template-rows: 200px 2fr 1fr;
+}
+
+.display-grid-rows-64-1fr-100 {
+  display: grid;
+  grid-template-rows: 64px 1fr 100px;
+}
+
+.display-grid-rows-64-1fr-100-full-page {
+  display: grid;
+  grid-template-rows: 64px 1fr 100px;
+  min-height: 100%; //use this if you want the grid to fill the whole page
+}
+
+.grid-rows-64-1fr-100 {
+  grid-template-rows: 64px 1fr 100px;
+}
+//
+
+
+.grid-flow-row { grid-auto-flow: row; } //default - grid has multiple rows
+.grid-flow-column { grid-auto-flow: column; } //grid has multiple columns
+
+//consider auto too, auto sizes columns based on content (content width)
+.grid-4-columns-auto {
+  grid-template-columns: repeat(4, auto);
+}
+
+.display-grid-4-columns-auto {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-columns {
+  grid-template-columns: repeat(2, 1fr); //same as writing - 1fr 1fr
+}
+
+.grid-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-columns {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-6-columns {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-7-columns {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.display-grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.display-grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); //same as writing - 1fr 1fr
+}
+
+.display-grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.display-grid-4-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.display-grid-5-columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.display-grid-6-columns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.display-grid-7-columns {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+
+.grid-2-rows {
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-3-rows {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-4-rows {
+  grid-template-rows: repeat(4, 1fr);
+}
+.grid-5-rows {
+  grid-template-rows: repeat(5, 1fr);
+}
+.grid-6-rows {
+  grid-template-rows: repeat(6, 1fr);
+}
+.grid-7-rows {
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.display-grid-2-rows {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.display-grid-3-rows {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.display-grid-4-rows {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.display-grid-5-rows {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+.display-grid-6-rows {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.display-grid-7-rows {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+}
+
+//Grid Alignment: Justify-Content (Justify Content applies to the grid structure, changing columns (In Row Axis - Horizontal Direction)
+.grid-justify-center { justify-content: center;}
+.grid-justify-start { justify-content: start;}
+.grid-justify-end { justify-content: end;}
+
+//Grid alignment distribution - when we have multiple columns (In Row Axis - Horizontal Direction)
+.grid-justify-between { justify-content: space-between}
+.grid-justify-around { justify-content: space-around}
+.grid-justify-evenly { justify-content: space-evenly}
+.grid-justify-stretch { justify-content: stretch} //default
+
+//Grid Center
+.grid-center-vertical { align-items: center}
+.grid-self-center { align-self: center}
+
+////Grid Alignment: Justify-Items (Justify Items applies to the child elements(within its cell), without affecting the shape of the grid
+//Flex Align Items (For single row flex items)
+.grid-items-center { justify-items: center}
+.grid-items-start { justify-items: start}
+.grid-items-end { justify-items: end}
+
+//Grid Align Rows = used to align the rows in the grid, container height has to be specified for it to work, otherwise they're just packed together
+// alignment of the grid (grid items) within the grid container , aligns the grid along the block (column) axis
+//In Grid, the property align-content is used to control spacing of the grid items along the block axis - which is the vertical direction
+// As a shortcut, what justify content does to horizontal direction, align content does to vertical direction
+// This property only works when:
+/*
+1.The grid container has a height value that is greater than the sum of individual
+row heights
+2. And when none of the grid items has a height specified in fr units
+*/
+.grid-align-center { align-content: center}
+.grid-align-start { align-content: start}
+.grid-align-end { align-content: end}
+.grid-align-between { align-content: space-between}
+.grid-align-around { align-content: space-around}
+.grid-align-evenly { align-content: space-evenly}
+.grid-align-stretch { align-content: stretch}
+
+//Align Content on  on multi-line flexible containers (Flex items in multiple lines) - Rarely used property in Flexbox
+.flex-align-center { align-content: center; }
+.flex-align-start { align-content: flex-start; }
+.flex-align-end { align-content: flex-end; }
+.flex-align-between { align-content: space-between; }
+.flex-align-around { align-content: space-around; }
+.flex-align-evenly { align-content: space-evenly; }
+.flex-align-stretch { align-content: stretch}
+
+
+//Grid Place Content
+/*
+The property place-content is a shorthand property in Grid that allows you to control
+the spacing of grid items along both the block and inline axes at once. It can specified with
+one or two values. (Align content + justify content)
+*/
+.place-content-center { place-content: center } // the value is assigned to both align content and justify content
+.place-content-start { place-content: start}
+.place-content-end { place-content: end}
+.place-content-between { place-content: space-between}
+.place-content-around { place-content: space-around}
+.place-content-evenly { place-content: space-evenly}
+.place-content-stretch { place-content: stretch}
+
+.grid-place-center-between { place-content: center space-between} //shortcut, first value is align content, second is justify content
+
+
+/*
+GRID PLACE ITEMS
+The property place-items is a shorthand property in Grid that allows you to align items
+along both the block and inline directions at once.
+. It can specified with one or two values. (Align Items + Justify items)
+*/
+.place-items-center { place-items: center}
+
+
+
+//Grid Justify Items = horizontally align the content within the columns as opposed to justify-content which allows us to horizontally space
+//out the entire columns
+/*
+To center align horizontally within each column
+*/
+.justify-items-start { justify-items: start}
+.justify-items-end { justify-items: end}
+.justify-items-center { justify-items: center}
+.justify-items-stretch { justify-items: stretch}
+
+
+
+//Grid Align-Items: Controls Vertical Position within the row
+//control the placement of individual elements within each cell.
+/*
+The property align-items allows us to vertically align the content within the rows, while
+the previous property align-content allows us to vertically space out the entire rows.
+*/
+/*
+ To center align vertically within each row
+*/
+.grid-items-center { align-items: center}
+
+
+
+/*
+GRID COLUMN START  It specifies the item's start position.
+*/
+.column-start-1 { grid-column-start: 1}
+.column-start-2 { grid-column-start: 2}
+.column-start-3 { grid-column-start: 3}
+.column-start-4 { grid-column-start: 4}
+.column-start-5 { grid-column-start: 5}
+.column-start-minus { grid-column-start: -1}
+
+/*
+GRID COLUMN END  It specifies the item's end position.
+*/
+.column-end-1 { grid-column-end: 1}
+.column-end-2 { grid-column-end: 2}
+.column-end-3 { grid-column-end: 3}
+.column-end-4 { grid-column-end: 4}
+.column-end-5 { grid-column-end: 5}
+.column-end-minus { grid-column-end: -1}
+
+//FLEX
+.display-flex { display: flex}
+.display-inline-flex { display: inline-flex}
+.flex-row { flex-direction: row}
+
+//Flex Direction
+.flex-row-reverse { flex-direction: row-reverse}
+.flex-column { flex-direction: column}
+.flex-column-reverse { flex-direction: column-reverse}
+
+//Flex Flow
+.flex-row-wrap { flex-flow: row wrap; }
+.flex-column-wrap { flex-flow: column wrap; }
+
+
+//Flex Justify Content - (Flex Container)
+.flex-space-between {justify-content: space-between;}
+.flex-space-around { justify-content: space-around; }
+.flex-space-evenly { justify-content: space-evenly; }
+.flex-start { justify-content: flex-start; }
+.flex-end { justify-content: flex-end; }
+.flex-center-horizontal { justify-content: center; } //Just to clarify that this centering happens horizontally (By Default)
+
+//Align Self (flex Item)
+.align-self-end { align-self: flex-end; }
+.align-self-start { align-self: flex-start; }
+.align-self-stretch { align-self: stretch; }
+.align-self-center { align-self: center; }
+.align-self-baseline { align-self: baseline; }
+
+//ALIGN SELF --- SELF ALIGN
+.flex-selfalign-end {}
+.flex-self-end{}
+
+
+//Flex Wrap
+.flex-wrap { flex-wrap: wrap;}
+.flex-wrap-reverse { flex-wrap: wrap-reverse;}
+.flex-no-wrap { flex-wrap: nowrap;}
+
+//Flex Align Items (For single row flex items)
+.flex-stretch { align-items: stretch; }
+.flex-align-start { align-items: flex-start; }
+.flex-align-end { align-items: flex-end; }
+.flex-baseline { align-items: baseline; }
+.flex-center-vertical { align-items: center;}
+
+//Align Content (Flex items in multiple lines) - Rarely used property
+.align-content-center { align-content: center; }
+.align-content-start { align-content: flex-start; }
+.align-content-end { align-content: flex-end; }
+.align-content-between { align-content: space-between; }
+.align-content-around { align-content: space-around; }
+.align-content-evenly { align-content: space-evenly; }
+
+//FLEX Centering Vertically and Horizontally (whatever is inside a container)
+.display-flex-center-both {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+//End Shortcut
+.display-flex-end-both {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+
+//FLEX ORDER
+.flex-order-0 { order: 0} //default
+.flex-order-1 { order: 1}
+.flex-order-2 { order: 2}
+.flex-order-2 { order: 3}
+.flex-order-negative-1 { order: -1}
+
+//FLEX-DIRECTION
+//.flex-col { flex-direction: column}
+
+//FLEX WIDTH
+//A column (flex item) with 50% width
+//Flex-basis property for a flex item is similar to width when flex-direction is row
+//and similar to height when flex-direction is column .
+.flex-75percent{ flex-basis: 75% }
+.flex-70percent{ flex-basis: 70% }
+.flex-65percent{ flex-basis: 65% }
+.flex-60percent{ flex-basis: 60% }
+.flex-50percent{ flex-basis: 50% }
+.flex-40percent{ flex-basis: 40% }
+.flex-35percent{ flex-basis: 35% }
+.flex-30percent{ flex-basis: 30% }
+.flex-25percent{ flex-basis: 25% }
+.flex-20percent{ flex-basis: 20% }
+.flex-15percent{ flex-basis: 15% }
+.flex-10percent{ flex-basis: 10% }
+
+
+
+// Flex Width ( Basis | Shrink | Grow):
+// A flex-item is forced to grow to fill up the remaining width
+
+.flex-grow-0 { flex-grow: 0 } //default
+.flex-grow-1 { flex-grow: 1 }
+.flex-grow-2 {flex-grow: 2 } /*will occupy double the space*/
+.flex-grow-3 {flex-grow: 3 } /*will occupy three times the space*/
+
+
+// A flex-item is forced not to shrink
+.flex-shrink-1 { flex-shrink: 1 } //default
+.flex-shrink-0 { flex-shrink: 0 }
+
+//Flex Grow and Shrink shortcuts
+.flex-grow-0-shrink-1 {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.flex-grow-1-shrink-0 {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+//Width
+.width-max-content { width: max-content}
+.width-min-content { width: min-content}
+.width-fit-content { width: fit-content}
+
+
+
+
+//Width wdp-width-percentage
+.width-100percent { width: 100%}
+.width-90percent { width: 90%}
+.width-80percent { width: 80%}
+.width-70percent { width: 70%}
+.width-60percent { width: 60%}
+.width-50percent { width: 50%}
+.width-40percent { width: 40%}
+.width-35percent { width: 35%}
+.width-30percent { width: 30%}
+
+//Width - Dimensions
+.width-0 { width: 0; }
+.width-2 { width: .2rem; }
+.width-4 { width: .4rem;}
+.width-8 { width: .8rem; }
+.width-12 { width: 1.2rem; }
+.width-16 { width: 1.6rem; }
+.width-24 { width: 2.4rem; }
+.width-32 { width: 3.2rem; }
+.width-48 { width: 4.8rem; }
+.width-64 { width: 6.4rem; }
+.width-80 { width: 8.0rem; }
+.width-96 { width: 9.6rem; }
+
+//Width >100
+.width-120 { width: 12rem; }
+.width-160 { width: 16rem; }
+.width-240 { width: 24rem; }
+.width-320 { width: 32rem; }
+.width-480 { width: 48rem; }
+.width-640 { width: 64rem; }
+.width-700 { width: 70rem; }
+.width-800 { width: 80rem; }
+.width-900 { width: 90rem; }
+.width-960 { width: 96rem; }
+
+//Max-Width >100
+.max-width-120 { max-width: 12rem; }
+.max-width-160 { max-width: 16rem; }
+.max-width-240 { max-width: 24rem; }
+.max-width-320 { max-width: 32rem; }
+.max-width-480 { max-width: 48rem; }
+.max-width-640 { max-width: 64rem; }
+.max-width-700 { max-width: 70rem; }
+.max-width-800 { max-width: 80rem; }
+.max-width-900 { max-width: 90rem; }
+.max-width-960 { max-width: 96rem; }
+
+//Min-Width >100
+.min-width-120 { min-width: 12rem; }
+.min-width-160 { min-width: 16rem; }
+.min-width-240 { min-width: 24rem; }
+.min-width-320 { min-width: 32rem; }
+.min-width-480 { min-width: 48rem; }
+.min-width-640 { min-width: 64rem; }
+.min-width-700 { min-width: 70rem; }
+.min-width-800 { min-width: 80rem; }
+.min-width-900 { min-width: 90rem; }
+.min-width-960 { min-width: 96rem; }
+
+//Height htp-height-percentage
+.height-100percent { height: 100%; }
+.height-90percent { height: 90%; }
+.height-80percent { height: 80%; }
+.height-70percent { height: 70%; }
+.height-60percent { height: 60%; }
+.height-50percent { height: 50%; }
+.height-40percent { height: 40%; }
+.height-35percent { height: 35%; }
+.height-30percent { height: 30%; }
+
+//Height - Dimensions
+.height-0 { height: 0; }
+.height-2 { height: .2rem; }
+.height-4 { height: .4rem;}
+.height-8 { height: .8rem; }
+.height-12 { height: 1.2rem; }
+.height-16 { height: 1.6rem; }
+.height-24 { height: 2.4rem; }
+.height-32 { height: 3.2rem; }
+.height-48 { height: 4.8rem; }
+.height-64 { height: 6.4rem; }
+.height-80 { height: 8.0rem; }
+.height-96 { height: 9.6rem; }
+
+//Height >100
+.height-120 { height: 12rem; }
+.height-160 { height: 16rem; }
+.height-240 { height: 24rem; }
+.height-320 { height: 32rem; }
+.height-480 { height: 48rem; }
+.height-640 { height: 64rem; }
+.height-700 { height: 70rem; }
+.height-800 { height: 80rem; }
+.height-900 { height: 90rem; }
+.height-960 { height: 96rem; }
+
+//Min Height min-height-p: min-heigheight-percentage
+.min-height-100percent { min-height: 100%; }
+.min-height-90percent { min-height: 90%; }
+.min-height-80percent { min-height: 80%; }
+.min-height-70percent { min-height: 70%; }
+.min-height-60percent { min-height: 60%; }
+.min-height-50percent { min-height: 50%; }
+.min-height-40percent { min-height: 40%; }
+.min-height-35percent { min-height: 35%; }
+.min-height-30percent { min-height: 30%; }
+
+//Min Height min-height-vh: min-heigheight-viewport height
+.min-height-100vh { min-height: 100vh; }
+.min-height-90vh { min-height: 90vh; }
+.min-height-80vh { min-height: 80vh; }
+.min-height-70vh { min-height: 70vh; }
+.min-height-60vh { min-height: 60vh; }
+.min-height-50vh { min-height: 50vh; }
+.min-height-40vh { min-height: 40vh; }
+.min-height-35vh { min-height: 35vh; }
+.min-height-30vh { min-height: 30vh; }
+
